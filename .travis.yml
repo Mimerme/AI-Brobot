@@ -1,2 +1,2 @@
 language: java
-before_script: cd Rover2
+before_script: cd JRover2
