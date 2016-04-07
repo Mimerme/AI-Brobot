@@ -2,6 +2,8 @@ language: java
 before_script: cd JRover2
 script:
   - mvn package
+after_success
+  - ls -a
 deploy:
   provider: releases
   api_key:
