@@ -1,2 +1,10 @@
 language: java
 before_script: cd JRover2
+deploy:
+  provider: releases
+  api_key:
+    secure: "UI9e03g+Y+WYQUYV+H8L0N/iQAlKOxKfN43CPF9UK5uFlB/3IM548GlBBBixAvTxD0b8fdze7aR1ftZqm6uqdIfLZKpmQpRCWIdrsLuBrNPRCWwm/MniLn4rFDsB+hMzwtqk3itU/kscZ3pkYBYBmoWY4GQAykdYcwiyxq+lqY73mTVL6+86CuBw365L1Hab2o+uCCb2TKn9rlfec1zxMPTSSLUGErb8+dw4qWB4aq9AqOBHNpfHQ2+4b6qVHemiFjSzTciCjvfdg7as42qyqyiyZcwzDxcW5rWdAzRuC2XEDIDw2dHKK9kZGN/X4wZ1MxHwc6C9kh/Ea3h8W/+grZ6DGa7txq5wPVPk36sARMUTb52Zl5ebyIkGfS9dEhmh6ohQeD7oEw2NBwS0hTtUqMA/w1K0/3QC6LArLK7vqz5Y06d8aaUqs80ZJomanYSHZ2d1fWcgYNSHN1MGhm7zWksYe/9nzrC8STMprq4MYGE+yqBZKvVAMGiC3RPgqVazA5SCxleZunZQ5yczTBDjbyrIFqTI9W+cRp9y2iBhrfJCRQ+ozYHnAZzXfZqv0HPJYwaQPCLf8a/f27MXG9eT02BzYZU23ScO6cNrUSVytguIe1bT/Lr4YXSpCI2zQJ2ZUdZG3GRtwhu16s6c+un+ClBq5vNIWpSBw8bKoTOaGlo="
+  file: "AI 0.0.1-SNAPSHOT.jar"
+  skip_cleanup: true
+  on:
+    tags: true
