@@ -1,8 +1,0 @@
-language: java
-before_script: cd JRover2
-script:
-  - mvn package
-after_script:
-  - git add .
-  - git add commit -m "New Dev Release"
-  - git push
